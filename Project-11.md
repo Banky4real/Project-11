@@ -29,3 +29,8 @@
 ### Artifacts Saved Locally on Jenkins Server
 
 ![Artifacts-Saved-Locally](./Images/Artifacts-saved-locally-on-Jenkins-Server.png)
+
+### Cloning Down ansible-config-mgt on ansible instance
+`git clone https://github.com/Banky4real/ansible-config-mgt.git`
+
+![ansible-config-mgt-Clone](./Images/Successful-Clone-of-ansible-config-mgt-repo-on-ansible-instance.png)
