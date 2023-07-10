@@ -34,3 +34,26 @@
 `git clone https://github.com/Banky4real/ansible-config-mgt.git`
 
 ![ansible-config-mgt-Clone](./Images/Successful-Clone-of-ansible-config-mgt-repo-on-ansible-instance.png)
+
+### Creating a new git Branch that will be used for the development of a new feature
+
+![git-branch-created](./Images/Created-a-new-git-branch.png)
+
+### Creating files and folders for the development of our new features
+
+![Files-and-folders-creation](./Images/Creating-our-files-and-folders-for-the-development-of-a-new-feature.png)
+
+### Checking out the newly created feature branch to our local machine to start building code and directory structure
+
+### Setting up ssh host config
+
+![ssh-host-config](./Images/Config-file-for-remote-connection-on-Local-Machine.png)
+
+### Successful Connection to remote host Jenkins ansible server
+
+![Connected-to-Jenkins-ansible-server](./Images/Successful-connection-to-our-Jenkins-ansible-server.png)
+
+### Checking out or switching to our newly created feature branch on our local machine
+
+`git checkout -b feature/project-11-ansible`
+![Successful-checkout-to-our-newly-created-feature-branch](./Images/Successful-checkout-to-our-newly-created-feature-branch-on-local-machine.png)
