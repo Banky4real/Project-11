@@ -39,10 +39,6 @@
 
 ![git-branch-created](./Images/Created-a-new-git-branch.png)
 
-### Creating files and folders for the development of our new features
-
-![Files-and-folders-creation](./Images/Creating-our-files-and-folders-for-the-development-of-a-new-feature.png)
-
 ### Checking out the newly created feature branch to our local machine to start building code and directory structure
 
 ### Setting up ssh host config
@@ -57,3 +53,30 @@
 
 `git checkout -b feature/project-11-ansible`
 ![Successful-checkout-to-our-newly-created-feature-branch](./Images/Successful-checkout-to-our-newly-created-feature-branch-on-local-machine.png)
+
+### Creating files and folders for the development of our new features
+
+![Files-and-folders-creation](./Images/Creating-our-files-and-folders-for-the-development-of-a-new-feature.png)
+
+### Setting up our Ansible inventory in order to be able to ssh into remote host to execute tasks
+
+### Importing our control server private key into ssh agent
+
+#### Initializing SSH agent
+`eval `ssh-agent -s` `
+
+#### Path to our control server (Jenkins Ansible Server) Private Key
+`ssh-add /home/ubuntu/.ssh/id_rsa`
+![Importing-our-private-key-into-ssh-agent](./Images/Importing-our-private-key-into-ssh-agent.png)
+
+### Confirming our control server private key has been added to ssh agent
+
+`ssh-add -l`
+
+![Confirming-our-added-key](./Images/Confirming-our-added-key.png)
+
+### SSH into webserver 1
+
+`ssh -A ec2-user@3.86.167.125`
+
+![ssh-into-webserver1-successful](./Images/Successful-ssh-into-webserver-1.png)
