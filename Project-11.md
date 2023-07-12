@@ -103,3 +103,9 @@
 `ansible lb -m ping -i dev.yml`
 
 ![connectivity-test-by-ping-to-one-of-our-target-servers-load-balancer-returned-success](./Images/connectivity-test-by-ping-to-one-of-our-target-servers-load-balancer-returned-success.png)
+
+### Testing Connectivity to all of our target servers in the inventory dev.yml file by Pinging all, returned success
+
+`ansible all -m ping -i dev.yml`
+
+![connectivity-test-by-ping-to-all-of-our-target-servers-returned-success.png](./Images/connectivity-test-by-ping-to-all-of-our-target-servers-returned-success.png)
