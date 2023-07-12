@@ -80,3 +80,26 @@
 `ssh -A ec2-user@3.86.167.125`
 
 ![ssh-into-webserver1-successful](./Images/Successful-ssh-into-webserver-1.png)
+
+### Updating our Inventory/dev.yml with the Private Ip's of the target servers
+
+` [nfs] `
+` 172.31.93.135 ansible_ssh_user='ec2-user' `
+
+` [webservers] `
+` 172.31.88.170 ansible_ssh_user='ec2-user' ` 
+` 172.31.94.194 ansible_ssh_user='ec2-user' `
+
+` [db] `
+` 172.31.92.231 ansible_ssh_user='ubuntu' `
+
+` [lb] `
+` 172.31.92.204 ansible_ssh_user='ubuntu' `
+
+![Updating-inventory-yml-with-target-servers-private-ip's](./Images/Updating-inventory-yml-with-target-servers-private-ip's.png)
+
+### Testing Connectivity to one of our target servers in the inventory dev.yml file by Pinging Load Balancer(lb), returned success
+
+`ansible lb -m ping -i dev.yml`
+
+![connectivity-test-by-ping-to-one-of-our-target-servers-load-balancer-returned-success](./Images/connectivity-test-by-ping-to-one-of-our-target-servers-load-balancer-returned-success.png)
