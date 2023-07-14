@@ -129,3 +129,35 @@
 `ansible-playbook -i inventory/dev.yml playbooks/common.yml`
 
 ![Running-playbook-tasks](./Images/Running-playbook-tasks.png)
+
+### Commiting our files to Github on vs Code
+
+`git status`
+
+`git add .`
+
+`git commit -m "adding our inventory and playbook files to our branch"`
+
+![Commiting-our-files-to-github](./Images/Commiting-our-files-to-github.png)
+
+### Creating a Pull request (PR)
+
+`git checkout main`
+
+`git pull origin feature/project-11-ansible`
+
+`git merge feature/project-11-ansible`
+
+`git commit -m "Merge main into <your_branch>"`
+
+`git push origin main`
+
+![Creating-a-Pull-request](./Images/creating-a-pull-request-from-feature-branch-to-our-main-branch.png)
+
+### Build Triggered by Jenkins after pull request made to main branch
+
+![Build-Triggered-by-Jenkins](./Images/build-successful-on-jenkins.png)
+
+### Files saved on Jenkins ansible server Archive
+
+![files-saved-on-jenkins-ansible-server-archive](./Images/files-saved-on-jenkins-ansible-server-archive.png)
