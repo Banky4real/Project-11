@@ -124,11 +124,11 @@
 
 ![Playbook-file](./Images/Playbook-file.png)
 
-#### Playbook file test result
+#### Ansible-Playbook file test result
 
 `ansible-playbook -i inventory/dev.yml playbooks/common.yml`
 
-![Running-playbook-tasks](./Images/Running-playbook-tasks.png)
+![Running-playbook-test](./Images/Running-playbook-tasks.png)
 
 ### Commiting our files to Github on vs Code
 
