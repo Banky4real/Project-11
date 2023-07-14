@@ -108,4 +108,24 @@
 
 `ansible all -m ping -i dev.yml`
 
-![connectivity-test-by-ping-to-all-of-our-target-servers-returned-success.png](./Images/connectivity-test-by-ping-to-all-of-our-target-servers-returned-success.png)
+![connectivity-test-by-ping-to-all-of-our-target-servers-returned-success](./Images/connectivity-test-by-ping-to-all-of-our-target-servers-returned-success.png)
+
+### Playing with ansible ad-hoc command
+
+`ansible webservers -i dev.yml -m shell -a "df -h"`
+
+![checking-my-mounts-on-webservers-using-ansible-adhoc-command-instead-of-ping](./Images/checking-my-mounts-on-webservers-using-shell-command-instead-of-ping.png)
+
+### Testing our Playbook with wireshark Installation
+
+#### Playbook file
+
+`cat playbooks/common.yml`
+
+![Playbook-file](./Images/Playbook-file.png)
+
+#### Playbook file test result
+
+`ansible-playbook -i inventory/dev.yml playbooks/common.yml`
+
+![Running-playbook-tasks](./Images/Running-playbook-tasks.png)
