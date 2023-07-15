@@ -130,6 +130,12 @@
 
 ![Running-playbook-test](./Images/Running-playbook-tasks.png)
 
+
+#### Confirming our Ansible-playbook task execution on target servers
+
+`which wireshark`
+![wireshark-installation-success-via-control-server-on-target-servers](./Images/wireshark-installation-success-via-control-server-on-target-servers.png)
+
 ### Commiting our files to Github on vs Code
 
 `git status`
