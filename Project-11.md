@@ -136,7 +136,7 @@
 `which wireshark`
 ![wireshark-installation-success-via-control-server-on-target-servers](./Images/wireshark-installation-success-via-control-server-on-target-servers.png)
 
-### Commiting our files to Github on vs Code
+### Commiting our files to feature/project-11-ansible branch on Github via vs Code
 
 `git status`
 
@@ -166,4 +166,61 @@
 
 ### Files saved on Jenkins ansible server Archive
 
+`/var/lib/jenkins/jobs/Project11Ansible/builds/6/archive/`
+
 ![files-saved-on-jenkins-ansible-server-archive](./Images/files-saved-on-jenkins-ansible-server-archive.png)
+
+
+## Optional Steps taken to install NodeJS on our Target Servers
+
+### Optional Steps Playbook file Updated with NodeJS Installation
+
+`sudo cat common.yml`
+
+![optional-step-playbook-code-updated-with-nodejs-installation](./Images/optional-step-playbook-code-updated-with-nodejs-installation.png)
+
+### Optional Steps Testing our Updated Playbook for NodeJS Installation
+
+`ansible-playbook -i inventory/dev.yml playbooks/common.yml`
+
+![optional-step-playbook-task-test-result-for-nodejs-installation](./Images/optional-step-playbook-task-test-result-for-nodejs-installation.png)
+
+#### Optional Step Confirming our NodeJS Installation on target Servers
+
+`whatis node`
+![nodejs-installation-success-via-control-server-on-target-servers](./Images/nodejs-installation-success-via-control-server-on-target-servers.png)
+
+### Optional Step Commiting our files to feature/project-11-ansible Branch on Github via vs Code
+
+`git status`
+
+`git add .`
+
+`git commit -m "tweaking our playbook file"`
+
+![optional-step-Commiting-our-files-to-github](./Images/optional-step-Commiting-our-files-to-github.png)
+
+
+### Optional Step Creating a Pull request (PR)
+
+`git switch main`
+
+`git pull origin feature/project-11-ansible`
+
+`git merge feature/project-11-ansible`
+
+`git commit -m "tweaking our playbook file"`
+
+`git push`
+
+![Creating-a-Pull-request](./Images/optional-step-Commiting-our-files-to-github-pt2.png)
+
+### Build Triggered by Jenkins after pull request made to main branch
+
+![optional-step-build-triggered-by-jenkins](./Images/optional-step-build-triggered-by-jenkins.png)
+
+### Files saved on Jenkins ansible server Archive
+
+`/var/lib/jenkins/jobs/Project11Ansible/builds/7/archive/`
+
+![optional-step-files-saved-on-jenkins-ansible-server-archive](./Images/optional-step-files-saved-on-jenkins-ansible-server-archive.png)
